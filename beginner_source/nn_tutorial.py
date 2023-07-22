@@ -1,20 +1,21 @@
 # -*- coding: utf-8 -*-
 """
-What is `torch.nn` *really*?
+`torch.nn`은 과연 무엇일까?
 ============================
 
-**Authors:** Jeremy Howard, `fast.ai <https://www.fast.ai>`_. Thanks to Rachel Thomas and Francisco Ingham.
+**저자:** Jeremy Howard, `fast.ai <https://www.fast.ai>`_. Rachel Thomas and Francisco Ingham에게 감사합니다.
 """
 
 ###############################################################################
-# We recommend running this tutorial as a notebook, not a script. To download the notebook (``.ipynb``) file,
-# click the link at the top of the page.
+# 이 튜토리얼을 스크립트가 아닌 노트북으로 실행하는 것을 권장합니다. 
+# 노트북(``.ipynb``) 파일을 다운로드하려면 페이지 상단의 링크를 클릭하세요.
 #
-# PyTorch provides the elegantly designed modules and classes `torch.nn <https://pytorch.org/docs/stable/nn.html>`_ ,
+# PyTorch는 뉴럴 네트워크를 생성하고 학습하는데 도움이 될 수 있도록 
+# `torch.nn <https://pytorch.org/docs/stable/nn.html>`_ ,
 # `torch.optim <https://pytorch.org/docs/stable/optim.html>`_ ,
 # `Dataset <https://pytorch.org/docs/stable/data.html?highlight=dataset#torch.utils.data.Dataset>`_ ,
-# and `DataLoader <https://pytorch.org/docs/stable/data.html?highlight=dataloader#torch.utils.data.DataLoader>`_
-# to help you create and train neural networks.
+# 그리고 `DataLoader <https://pytorch.org/docs/stable/data.html?highlight=dataloader#torch.utils.data.DataLoader>`_
+# 처럼 깔끔하게 설계된 모듈과 클래스를 제공합니다.
 # In order to fully utilize their power and customize
 # them for your problem, you need to really understand exactly what they're
 # doing. To develop this understanding, we will first train basic neural net
