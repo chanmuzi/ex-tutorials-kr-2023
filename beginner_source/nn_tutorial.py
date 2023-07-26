@@ -3,19 +3,19 @@
 `torch.nn`은 과연 무엇일까?
 ============================
 
-**저자:** Jeremy Howard, `fast.ai <https://www.fast.ai>`_. Rachel Thomas and Francisco Ingham에게 감사합니다.
+**저자:** Jeremy Howard, `fast.ai <https://www.fast.ai>`_. Rachel Thomas 그리고 Francisco Ingham에게 감사합니다.
 """
 
 ###############################################################################
 # 이 튜토리얼을 스크립트가 아닌 노트북으로 실행하는 것을 권장합니다. 
-# 노트북(``.ipynb``) 파일을 다운로드하려면 페이지 상단의 링크를 클릭하세요.
+# 해당 노트북(``.ipynb``) 파일을 다운로드하려면 페이지 상단의 링크를 클릭하세요.
 #
 # PyTorch는 뉴럴 네트워크를 생성하고 학습하는데 도움이 될 수 있도록 
 # `torch.nn <https://pytorch.org/docs/stable/nn.html>`_ ,
 # `torch.optim <https://pytorch.org/docs/stable/optim.html>`_ ,
 # `Dataset <https://pytorch.org/docs/stable/data.html?highlight=dataset#torch.utils.data.Dataset>`_ ,
 # 그리고 `DataLoader <https://pytorch.org/docs/stable/data.html?highlight=dataloader#torch.utils.data.DataLoader>`_
-# 처럼 깔끔하게 설계된 모듈과 클래스를 제공합니다.
+# 처럼 잘 설계된 모듈과 클래스를 제공합니다.
 # In order to fully utilize their power and customize
 # them for your problem, you need to really understand exactly what they're
 # doing. To develop this understanding, we will first train basic neural net
